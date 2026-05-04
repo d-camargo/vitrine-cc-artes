@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C Artes | Vasos Divertidos para Suculentas</title>
+    <meta name="description" content="Vasos temáticos para dar vida ao seu ambiente. Designs criativos, carinhas felizes, Harry Potter e muito mais!">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Meta Pixel Code (Placeholder) -->
+    <!-- <script>
+        // O código do pixel do Meta (Facebook/Instagram) será colado aqui
+    </script> -->
+    <!-- TikTok Pixel Code (Placeholder) -->
+    <!-- <script>
+        // O código do pixel do TikTok será colado aqui
+    </script> -->
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-palette"></i> C&C Artes
+        </a>
+        <a href="#produtos" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Ver Catálogo</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content animate-fade-in">
+            <span class="tagline">Artesanato Criativo ✨</span>
+            <h1>Dê vida ao seu ambiente com vasos cheios de personalidade.</h1>
+            <p>Seus cantinhos favoritos merecem mais do que vasos comuns. Nossos vasinhos temáticos são perfeitos para suculentas e garantem um sorriso no seu dia a dia.</p>
+            <div class="cta-group">
+                <a href="#produtos" class="btn btn-primary">
+                    Explorar Coleção <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image animate-fade-in" style="animation-delay: 0.2s;">
+            <img src="assets/hero_planters.png" alt="Coleção de Vasos Divertidos" loading="lazy">
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Sustentabilidade</h3>
+            <p>Feito com materiais eco-friendly, buscando sempre o menor impacto ambiental possível.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <h3>Feito com Carinho</h3>
+            <p>Cada peça é produzida com atenção aos detalhes para garantir um acabamento perfeito nas carinhas.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Compra Segura</h3>
+            <p>Finalize sua compra diretamente pela Shopee com garantia de entrega e frete grátis*.</p>
+        </div>
+    </section>
+
+    <section id="produtos" class="products">
+        <div class="section-header">
+            <h2>Mais Vendidos</h2>
+            <p>Escolha o vasinho que mais combina com você ou monte um kit para presentear.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/planter_heart.png" alt="Vaso Fofo com Coração" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Vaso Fofo com Coração</h3>
+                    <div class="product-price">R$ 18,20</div>
+                    <p>O vasinho perfeito para demonstrar carinho. Segurando um coraçãozinho, ele derrete qualquer coração.</p>
+                    <a href="https://s.shopee.com.br/4VZApSNpzi" class="btn btn-shopee btn-full" target="_blank">
+                        <i class="fa-solid fa-cart-shopping"></i> Comprar na Shopee
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="assets/planter_mug.png" alt="Vaso Decorativo Carinha Feliz" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Vaso Carinha Feliz</h3>
+                    <div class="product-price">R$ 22,40</div>
+                    <p>Dê mais vida para sua mesa de trabalho! Este vasinho super criativo vai alegrar o seu dia.</p>
+                    <a href="https://s.shopee.com.br/4qC1DzJ1HZ" class="btn btn-shopee btn-full" target="_blank">
+                        <i class="fa-solid fa-cart-shopping"></i> Comprar na Shopee
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="assets/planter_wizard.png" alt="Vaso Harry Potter" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Vaso Harry Potter</h3>
+                    <div class="product-price">R$ 24,50</div>
+                    <p>Trazendo um pouco de magia para as suas plantas. Detalhes incríveis no Chapéu Seletor e óculos.</p>
+                    <a href="https://s.shopee.com.br/1gEzSIxGBW" class="btn btn-shopee btn-full" target="_blank">
+                        <i class="fa-solid fa-cart-shopping"></i> Comprar na Shopee
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>C&C Artes</h3>
+            <p>Decorando o seu lar com muita personalidade.</p>
+            <p style="font-size: 0.8rem; margin-top: 2rem;">&copy; 2026 C&C Artes. Todos os direitos reservados. Os links nesta página direcionam para a plataforma Shopee.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add intersection observer for scroll animations if needed
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.product-card').forEach((el, index) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
